@@ -13,7 +13,7 @@ This app is based on MERN stacks which basically uses:
 ## Installation
   After installing NodeJS and latest version of npm , run the following command to install the required packages.
   In the terminal, run 
-  ```
+  ```js
    npm install 
   ```
   This will install all the package we have used in our web app.
@@ -22,7 +22,7 @@ This app is based on MERN stacks which basically uses:
  
  The client-side or the frontend will use port 3000.
  So, to run client side seperately use
- ```
+ ```js
   cd client 
    (to get inside to client folder and)
    
