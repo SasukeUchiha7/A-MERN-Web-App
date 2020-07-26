@@ -8,6 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/users", require("./routes/users"));
+app.use("/api/jobs", require("./routes/jobs"));
 
 const port = 5000;
 
