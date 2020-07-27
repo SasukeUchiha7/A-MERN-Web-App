@@ -30,3 +30,5 @@ This app is based on MERN stacks which basically uses:
  ```
  this will open the frontend in http://localhost:3000/ .
  
+## Author
+- SasukeUchiha7 - **Apil Thapa**
