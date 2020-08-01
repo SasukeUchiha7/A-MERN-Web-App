@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-
+import "bootstrap/dist/css/bootstrap.css";
 
 class NavBar extends Component {
   state = {};
@@ -8,7 +7,7 @@ class NavBar extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             Navbar
           </a>
           <button
@@ -24,16 +23,13 @@ class NavBar extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-item nav-link active" href="#">
+              <a className="nav-item nav-link active" href="/home">
                 Home <span className="sr-only">(current)</span>
               </a>
-              <a
-                className="nav-item nav-link"
-                href="http://localhost:3000/jobs"
-              >
+              <a className="nav-item nav-link" href="/jobs">
                 Know-Jobs
               </a>
-              <a className="nav-item nav-link" href="#">
+              <a className="nav-item nav-link" href="/about">
                 About
               </a>
             </div>

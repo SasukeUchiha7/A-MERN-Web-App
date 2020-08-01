@@ -1,10 +1,13 @@
 const express = require("express");
+const User = require("../models/user");
 
 const router = express.Router();
 
 // Get api-"/users"
 router.get("/", (req, res) => {
-  res.send("Hey this is user api");
+  User.find((user) => {
+    res.json(user);
+  });
 });
 
 module.exports = router;

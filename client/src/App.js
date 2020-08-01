@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import NavBar from "./components/navbar.component";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -10,7 +10,7 @@ function App() {
     <div>
       <NavBar />
       <Router>
-        <Route path="/" component={Home} />
+        <Route path="/home" component={Home} />
         <Route path="/jobs" component={JobsList} />
       </Router>
     </div>

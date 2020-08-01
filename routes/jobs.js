@@ -1,5 +1,6 @@
 const express = require("express");
 const Job = require("../models/job");
+const { remove } = require("../models/job");
 
 const router = express.Router();
 
@@ -14,7 +15,7 @@ router.get("/", (req, res) => {
   });
 });
 
-//to post jobs -api- "/jobs"
+//to add jobs -api- "/jobs"
 router.post("/", (req, res) => {
   const newjob = new Job({
     jobname: req.body.jobname,
@@ -25,6 +26,16 @@ router.post("/", (req, res) => {
       res.json({ msg: "Failed to add job" });
     } else {
       res.json({ msg: "Job added successfully" });
+    }
+  });
+});
+
+router.delete("/:id", (req, res) => {
+  Job.remove({ _id: req.params.id }, (err, result) => {
+    if (err) {
+      res.json(err);
+    } else {
+      res.json(result);
     }
   });
 });

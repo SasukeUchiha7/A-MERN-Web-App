@@ -1,1 +1,1 @@
-export { MONGO_URI };
+module.exports = { MONGO_URI: "" };
