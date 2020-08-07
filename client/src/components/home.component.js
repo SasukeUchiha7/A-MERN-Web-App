@@ -5,12 +5,12 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <div class="jumbotron">
-        <h1 class="display-4">Hello!!</h1>
-        <p class="lead">This is a home page for all users.</p>
-        <hr class="my-4" />
+      <div className="jumbotron">
+        <h1 className="display-4">Hello!!</h1>
+        <p className="lead">This is a home page for all users.</p>
+        <hr className="my-4" />
         <p>sdsfdsgdfgfdgdfasd.</p>
-        <a class="btn btn-primary btn-lg" href="/about" role="button">
+        <a className="btn btn-primary btn-lg" href="/about" role="button">
           Learn more
         </a>
       </div>

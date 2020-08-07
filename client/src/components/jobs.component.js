@@ -1,8 +1,20 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import axios from "axios";
 
 class JobsList extends Component {
-  state = {};
+  state = {
+    jobname = "",
+    jobDesc = ""
+  };
+
+  componentDidMount(){
+      axios.get("get_url",).then(res =>{
+       jobname= res.data.jobname,
+       jobDesc = res.data.jobDesc
+      })
+  }
+
   render() {
     return (
       <div className="container">
