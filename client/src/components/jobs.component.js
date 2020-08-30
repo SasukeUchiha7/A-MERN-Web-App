@@ -4,16 +4,9 @@ import axios from "axios";
 
 class JobsList extends Component {
   state = {
-    jobname = "",
-    jobDesc = ""
+    jobname: "",
+    jobDesc: "",
   };
-
-  componentDidMount(){
-      axios.get("get_url",).then(res =>{
-       jobname= res.data.jobname,
-       jobDesc = res.data.jobDesc
-      })
-  }
 
   render() {
     return (
