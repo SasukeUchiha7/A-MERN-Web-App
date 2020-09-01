@@ -13,6 +13,9 @@ class Home extends Component {
         <a className="btn btn-primary btn-lg" href="/about" role="button">
           Learn more
         </a>
+        <a className="btn btn-primary btn-lg ml-2" href="/login" role="button">
+          Login
+        </a>
       </div>
     );
   }

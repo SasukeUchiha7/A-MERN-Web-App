@@ -4,6 +4,7 @@ import NavBar from "./components/navbar.component";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import JobsList from "../src/components/jobs.component";
 import Home from "./components/home.component";
+import Login from "./components/login.component";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Router>
         <Route path="/home" component={Home} />
         <Route path="/jobs" component={JobsList} />
+        <Route path="/login" component={Login} />
       </Router>
     </div>
   );
